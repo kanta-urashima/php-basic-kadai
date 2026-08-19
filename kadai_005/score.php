@@ -8,31 +8,24 @@
     <body>
         <p>
             <?php
-            echo 'score'.'1' . 80;
-            echo '<br>';
-            echo 'score'.'2' . 60;
-            echo '<br>';
-            echo 'score'.'3' . 55;
-            echo '<br>';
-            echo 'score'.'4'  . 40;
-            echo '<br>';
-            echo 'score'.'5'  . 100;
-            echo '<br>';
-            echo 'score'.'6' . 25;
-            echo '<br>';
-            echo 'score'.'7' . 80;
-            echo '<br>';
-            echo 'score'.'8' . 95;
-            echo '<br>';
-            echo 'score'.'9' . 30;
-            echo '<br>';
-            echo 'score'.'10' . 60;
-            echo '<br>';
-            //合計点
-            echo '合計点' . 80 + 60 + 55 + 40 + 100 + 25 + 80 + 95 + 30 + 60; 
-            echo '<br>';
-            //平均点
-            echo '平均点' . 625 / 10
+           $score1 = 80;
+$score2 = 60;
+$score3 = 55;
+$score4 = 40;
+$score5 = 100;
+$score6 = 25;
+$score7 = 80;
+$score8 = 95;
+$score9 = 30;
+$score10 = 60;
+
+$total = $score1 + $score2 + $score3 + $score4 + $score5 + $score6 + $score7 + $score8 + $score9 + $score10;
+
+$average = $total / 10;
+
+echo '合計点 ' . $total;
+echo '<br>';
+echo '平均点 ' . $average;
 ?>
         </p>
     </body>
